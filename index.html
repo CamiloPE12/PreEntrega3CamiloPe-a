@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a la Tienda de Videojuegos. Encuentra los mejores juegos al mejor precio.">
+    <meta name="keywords" content="Videojuegos, Tienda de Videojuegos, Juegos al mejor precio, Comprar Videojuegos">
+    <meta name="author" content="Tu Nombre">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Tienda de Videojuegos - Los Mejores Juegos al Mejor Precio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Videojuegos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./ofertas.html">Ofertas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./top.html">Top</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contenido Principal -->
+<div class="container mt-5">
+    <h1 class="text-center floating">Bienvenido a la Tienda de Videojuegos</h1>
+    <h2 class="text-center floating">¡Oferta!</h2>
+    <p class="text-center floating">Encuentra los mejores juegos al mejor precio. ¡Descubre nuestras ofertas exclusivas y disfruta de la mejor experiencia gamer!</p>
+
+    <!-- Sección de Juegos -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4 d-flex h-100 hover-grow">
+                <img src="./static/crashbandicoot.jpg" class="card-img-top" alt="Crash Bandicoot">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Crash Bandicoot</h5>
+                    <p class="card-text">$240.000</p>
+                    <p class="card-text">¡Ayuda a Crash a derrotar al Dr. Neo Cortex en esta aventura clásica!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 d-flex h-100 hover-grow">
+                <img src="./static/fifa1.jpeg" class="card-img-top" alt="FIFA 24">
+                <div class="card-body text-center">
+                    <h5 class="card-title">FIFA 24</h5>
+                    <p class="card-text">$280.000</p>
+                    <p class="card-text">¡Disfruta del mejor simulador de fútbol con los equipos y estadios más realistas!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 d-flex h-100 hover-grow">
+                <img src="./static/howards1.jpg" class="card-img-top" alt="Hogwarts Legacy">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hogwarts Legacy</h5>
+                    <p class="card-text">$300.000</p>
+                    <p class="card-text">¡Embárcate en una épica aventura en el mundo de Hogwarts lleno de magia y misterios!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 d-flex h-100 hover-grow">
+                <img src="./static/justdance.jpg" class="card-img-top" alt="Just Dance 2024">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Just Dance 2024</h5>
+                    <p class="card-text">$250.000</p>
+                    <p class="card-text">¡Diviértete y baila al ritmo de las mejores canciones con Just Dance 2024!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

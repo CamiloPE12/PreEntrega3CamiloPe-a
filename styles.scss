@@ -1,0 +1,72 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$dark-color: #343a40;
+$light-color: #f8f9fa;
+
+// Estilos para la barra de navegación
+.navbar {
+  background-color: $dark-color;
+
+  .nav-link {
+    color: $light-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  // Centrar los elementos de la navbar
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+// Contenido Principal
+.container {
+  h1 {
+    color: $dark-color;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: float 3s ease-in-out infinite;
+  }
+  h2 {
+    color: red;
+    margin-bottom: 30px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  p {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .card {
+    border: 1px solid $light-color;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      color: $primary-color;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: $secondary-color;
+    }
+  }
+
+  .hover-grow {
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
